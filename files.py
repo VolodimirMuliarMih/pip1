@@ -1,0 +1,11 @@
+#file
+fstr1 = input('введите строку для дальнейшей обработки: ')
+fstr2 = input('введите строку для дальнейшей обработки: ')
+fstr3 = input('введите строку для дальнейшей обработки: ')
+fstr4 = input('введите строку для дальнейшей обработки: ')
+my_file = open('filenew.str', "w+")
+my_file.write(fstr1+'\n'+fstr2+'\n')
+my_file.close()
+my_file = open('filenew.str', "a+")
+my_file.write(fstr3+'\n'+fstr4+'\n')
+my_file.close()
